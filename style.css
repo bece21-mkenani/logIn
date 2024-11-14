@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(./assets/image3.jpg);
+    background-position:center;
+    background-size: cover;
+    opacity:1;
+    animation: backgd 2s infinite;
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius:10px;
+    background-color: #c4d0e7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border:1.3px solid rgb(10, 10, 134);
+    backdrop-filter:blur(15px);
+}
+.login-form {
+    padding: 20px;
+}
+
+h2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    font-family:Open sans, san sans-serif;
+    color: #333;
+    margin-bottom:14px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 38px 10px 10px;
+    font-size: 12px;
+    border: 0.1px solid #9b9696;
+   font-family: sans-serif;
+    border-radius:10px;
+    outline:none;
+    z-index:-2;
+    
+}
+
+.input-field label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 12px;
+    color: #e7e0e0;
+    transition: 0.2s;
+}
+.input-field input:focus ~ label,
+.input-field input:not(:placeholder-shown)~label{
+    top: -8px;
+    font-size: 12px;
+    color: #141313; 
+    z-index:10; 
+    backdrop-filter: blur(1.5px); 
+}
+
+.input-field i {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 14px;
+    color: #251d6e;
+}
+
+.input-field i.fa-eye {
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #111327;
+    text-decoration:none;
+}
+
+.forgot-password:hover{
+    text-decoration: underline;
+
+}
+
+.or {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+}
+
+.google-btn, .facebook-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.google-btn i, .facebook-btn i {
+    margin-right: 10px;
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.facebook-btn:hover {
+    background-color: #344e86;
+}
+
+
+
+@media screen and (max-width:650px){
+
+
+    .container{
+       width:80%;
+       height:80vh;
+   }
+   .login-form{
+    height:72vh;
+   }
+}
+
+@keyframes backgd {
+
+    100%{
+        filter:hue-rotate(360deg);
+    }
+    
+}
+
+
+    
