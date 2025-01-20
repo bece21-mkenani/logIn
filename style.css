@@ -121,6 +121,7 @@ h2 {
 .google-btn, .facebook-btn {
     width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
     font-size: 14px;
     border: none;
     border-radius: 5px;
@@ -128,10 +129,6 @@ h2 {
     color: #333;
     cursor: pointer;
 }
-.google-btn{
-    margin-bottom:20px;
-}
-
 .google-btn i, .facebook-btn i {
     margin-right: 10px;
 }
