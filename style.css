@@ -160,13 +160,7 @@ h2 {
    }
 }
 
-@keyframes backgd {
 
-    100%{
-        filter:hue-rotate(360deg);
-    }
-    
-}
 
 
     
